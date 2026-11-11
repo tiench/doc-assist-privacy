@@ -4,6 +4,6 @@ window.SITE = {
   publisher: 'Cao Hoang Tien',
   email: 'tiench.dev@gmail.com',
   privacyUrl: 'https://tiench.github.io/doc-assist-privacy',
-  termsUrl: '../terms-and-conditions/doc-assist-term',
+  termsUrl: 'https://tiench.github.io/doc-assist-term',
   updated: '11 November 2026',
 };
