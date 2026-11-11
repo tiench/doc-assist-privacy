@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Document Assistant</title>
+    <meta
+      name="description"
+      content="Privacy Policy for Document Assistant. Documents stay on the device. Gemini features send only the content of the action you start to Google."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="top">
+    <header class="top">
+      <div class="wrap top-inner">
+        <a class="brand" href="#top">Document Assistant</a>
+        <div class="tools">
+          <nav class="nav" aria-label="Legal">
+            <a
+              data-link="privacy"
+              data-label-en="Privacy Policy"
+              data-label-vi="Chính sách quyền riêng tư"
+              href="../privacy-policy/index.html"
+              aria-current="page"
+              >Privacy Policy</a
+            >
+            <a
+              data-link="terms"
+              data-label-en="Terms &amp; Conditions"
+              data-label-vi="Điều khoản và điều kiện"
+              href="../terms-and-conditions/index.html"
+              >Terms &amp; Conditions</a
+            >
+          </nav>
+          <div class="langs" role="group" aria-label="Language">
+            <button type="button" data-set-lang="en" aria-pressed="true">English</button>
+            <button type="button" data-set-lang="vi" aria-pressed="false">Tiếng Việt</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <article data-lang-panel="en">
+        <p class="kicker">Document Assistant · iOS and Android</p>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated <span data-fill="updated">11 November 2026</span></p>
+        <p>
+          This policy explains how the Document Assistant app for iPhone, iPad, and Android
+          (<code>com.doc.assistant</code>) handles information. It is published by
+          <span data-fill="publisher">[Publisher legal name]</span> (“we”).
+        </p>
+        <p>
+          The short version: your documents stay on your device. We do not run an account
+          system and we do not sell your documents. A document leaves the device only when
+          you start a Gemini feature, and then only the content that feature needs is sent
+          to Google. Payments are handled by Apple or Google Play.
+        </p>
+
+        <nav class="toc" aria-label="On this page">
+          <ol>
+            <li><a href="#en-device">Information stored on your device</a></li>
+            <li><a href="#en-permissions">Camera, photos, and files</a></li>
+            <li><a href="#en-local">On-device processing</a></li>
+            <li><a href="#en-leaves">When information leaves the device</a></li>
+            <li><a href="#en-purchases">Purchases</a></li>
+            <li><a href="#en-not">What we do not collect</a></li>
+            <li><a href="#en-retention">How long information is kept</a></li>
+            <li><a href="#en-children">Children</a></li>
+            <li><a href="#en-security">Security</a></li>
+            <li><a href="#en-rights">Your choices</a></li>
+            <li><a href="#en-changes">Changes</a></li>
+            <li><a href="#en-contact">Contact</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="en-device">Information stored on your device</h2>
+        <p>The app stores a document library in the app’s private storage. That library can include:</p>
+        <ul>
+          <li>The document name, language (English or Vietnamese), and dates</li>
+          <li>Page images you scan, import from photos, or import from a PDF</li>
+          <li>Recognized text, and any edits you make to the note</li>
+          <li>A summary, key facts, and answers you keep</li>
+          <li>Whether spelling or the summary was last produced on the device or with Gemini</li>
+          <li>A PDF the app creates for that document</li>
+          <li>The on-device AI file, if you download it</li>
+          <li>Whether a Gemini subscription is active, and how many purchased Gemini uses remain on this device</li>
+        </ul>
+        <p>
+          We do not receive a copy of this library. The app does not upload it to a server we operate.
+          Another person can see it only if they can unlock your device or you export a file yourself.
+        </p>
+
+        <h2 id="en-permissions">Camera, photos, and files</h2>
+        <ul>
+          <li><strong>Camera.</strong> Used while you scan a page. The image is kept only if you keep that page.</li>
+          <li><strong>Photo library.</strong> Used only for the images you choose to import. The app does not scan the library in the background.</li>
+          <li><strong>Files.</strong> Used only for the PDF you choose to import.</li>
+          <li><strong>Internet.</strong> Used to download the on-device AI and to send a Gemini request you start. It is also used by Apple or Google Play when you buy a subscription or a use pack.</li>
+        </ul>
+        <p>The app does not ask for your location, contacts, microphone, or advertising identifier.</p>
+
+        <h2 id="en-local">On-device processing</h2>
+        <p>These features run on the phone. They do not send the page or the note to us or to Gemini:</p>
+        <ul>
+          <li>Text recognition for Latin script</li>
+          <li>Spelling help with the built-in English and Vietnamese dictionaries</li>
+          <li>Summaries, spelling correction, questions, key facts, and name suggestions made with the on-device AI</li>
+          <li>Creating a PDF, rotating a page, and editing the note</li>
+        </ul>
+        <p>
+          The on-device AI is a Qwen2.5 1.5B Instruct model in GGUF format. The first time you need it,
+          the app downloads that file from Hugging Face. You can stop the download. Stopping deletes the
+          partial file. After the download, the model runs on the device. Your document is not part of the download.
+          Hugging Face receives a normal connection for the file request, which includes the device’s IP address.
+        </p>
+
+        <h2 id="en-leaves">When information leaves the device</h2>
+        <div class="callout">
+          <p>
+            Gemini features are optional. They are: reading page images, correcting spelling, writing a summary,
+            answering a question, and extracting key facts, when you choose Gemini. The same kinds of tasks can
+            be done on the device without sending the document.
+          </p>
+        </div>
+        <p>
+          If you start a Gemini feature, the app sends that request from your device to Google’s Gemini API
+          (<code>generativelanguage.googleapis.com</code>). The request contains only what that action needs:
+        </p>
+        <ul>
+          <li><strong>Read page images:</strong> up to three JPEG page images, plus the document language</li>
+          <li><strong>Spelling, summary, and key facts:</strong> the note text, plus the document language</li>
+          <li><strong>Question:</strong> the note text, your question, and the document language</li>
+        </ul>
+        <p>
+          The request does not include a user account, because the app has none. It does not include contacts,
+          your photo library, or pages you did not include in that action.
+        </p>
+        <p>
+          Google processes the request under the
+          <a href="https://ai.google.dev/gemini-api/terms">Gemini API Terms</a>
+          and
+          <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+          We do not operate the Gemini service and we do not control how long Google keeps a request.
+          Do not use Gemini for a document you are not allowed to share with Google.
+        </p>
+        <p>
+          Apple and Google also process store and device information under their own policies when you download
+          the app, buy a subscription or a use pack, or use their operating system. We do not receive your full
+          payment card number.
+        </p>
+
+        <h2 id="en-purchases">Purchases</h2>
+        <p>
+          Gemini features require either an active subscription or a purchased use. On-device features do not.
+          The price, billing period, and number of uses are shown in the app before you pay. Apple sells these
+          products on iOS. Google Play sells them on Android.
+        </p>
+        <p>
+          The app stores on the device the information needed to tell whether Gemini is unlocked. Purchase
+          history stays with Apple or Google. Billing, renewal, cancellation, and unused uses are described in
+          the <a data-link="terms" href="../terms-and-conditions/index.html">Terms &amp; Conditions</a>.
+        </p>
+
+        <h2 id="en-not">What we do not collect</h2>
+        <ul>
+          <li>We do not ask you to create an account.</li>
+          <li>We do not sell or rent your documents or your use of the app.</li>
+          <li>The app does not include an advertising SDK or our own analytics SDK.</li>
+          <li>We do not use document content to train a model we operate.</li>
+        </ul>
+
+        <h2 id="en-retention">How long information is kept</h2>
+        <p>
+          Documents, notes, summaries, and purchased uses stored only in the app remain until you delete them,
+          delete the on-device AI, or uninstall the app. Uninstalling removes the local library and unused uses
+          saved only on that device.
+        </p>
+        <p>
+          We do not keep a server copy, so we cannot restore a document you deleted. A Gemini request is kept
+          only under Google’s terms, not in a library we host. Store receipts are kept by Apple or Google under
+          their rules.
+        </p>
+
+        <h2 id="en-children">Children</h2>
+        <p>
+          Document Assistant is not directed to children under 13, and we do not knowingly collect personal
+          information from them. Do not use a Gemini feature with a child’s personal documents.
+        </p>
+
+        <h2 id="en-security">Security</h2>
+        <p>
+          The library is stored in the app’s private area and is protected by the device lock and the operating
+          system. Gemini requests are sent over HTTPS. No storage or transmission method is completely secure.
+          You are responsible for who can unlock the device and for which documents you send to Gemini.
+        </p>
+
+        <h2 id="en-rights">Your choices</h2>
+        <ul>
+          <li>Use the on-device features instead of Gemini.</li>
+          <li>Delete one document, delete the on-device AI, or delete the app.</li>
+          <li>Cancel a subscription in your Apple ID or Google Play subscription settings. The store keeps charging until you cancel there.</li>
+          <li>Ask Apple or Google for a refund under that store’s refund rules.</li>
+          <li>Email us about this policy. Because we do not hold your library, we cannot retrieve it for you.</li>
+        </ul>
+        <p>
+          Depending on where you live, you may have rights to access, correct, delete, or limit personal
+          information, and to complain to a data-protection authority. Those rights apply to information we
+          actually hold. For a Gemini request, Google is an independent recipient. For a purchase, Apple or
+          Google is the recipient of the payment data.
+        </p>
+
+        <h2 id="en-changes">Changes</h2>
+        <p>
+          If we change this policy, we will update the date on this page. If a change materially affects how
+          Gemini uses your documents, we will also show a notice in the app before that change applies.
+          Where the law requires a particular form of consent, we will ask for it.
+        </p>
+
+        <h2 id="en-contact">Contact</h2>
+        <p>
+          <span data-fill="publisher">[Publisher legal name]</span><br />
+          <a data-fill="email" href="#">[Contact email]</a>
+        </p>
+        <p>
+          Application id: <code>com.doc.assistant</code>. This policy covers the iOS and Android apps.
+          The terms for using the app, including subscriptions and per-use purchases, are in the
+          <a data-link="terms" href="../terms-and-conditions/index.html">Terms &amp; Conditions</a>.
+        </p>
+      </article>
+
+      <article data-lang-panel="vi" hidden>
+        <p class="kicker">Document Assistant · iOS và Android</p>
+        <h1>Chính sách quyền riêng tư</h1>
+        <p class="updated">Cập nhật lần cuối <span data-fill="updated">11 November 2026</span></p>
+        <p>
+          Chính sách này giải thích cách ứng dụng Document Assistant trên iPhone, iPad và Android
+          (<code>com.doc.assistant</code>) xử lý thông tin. Ứng dụng do
+          <span data-fill="publisher">[Publisher legal name]</span> (“chúng tôi”) phát hành.
+        </p>
+        <p>
+          Tóm tắt: tài liệu nằm trên thiết bị của bạn. Chúng tôi không có hệ thống tài khoản và không bán
+          tài liệu của bạn. Tài liệu chỉ rời thiết bị khi bạn bắt đầu một chức năng Gemini, và chỉ phần nội dung
+          chức năng đó cần được gửi tới Google. Việc thanh toán do Apple hoặc Google Play xử lý.
+        </p>
+
+        <nav class="toc" aria-label="Trong trang này">
+          <ol>
+            <li><a href="#vi-device">Thông tin lưu trên thiết bị</a></li>
+            <li><a href="#vi-permissions">Máy ảnh, ảnh và tệp</a></li>
+            <li><a href="#vi-local">Xử lý trên thiết bị</a></li>
+            <li><a href="#vi-leaves">Khi thông tin rời thiết bị</a></li>
+            <li><a href="#vi-purchases">Mua hàng</a></li>
+            <li><a href="#vi-not">Những gì chúng tôi không thu thập</a></li>
+            <li><a href="#vi-retention">Thời gian lưu</a></li>
+            <li><a href="#vi-children">Trẻ em</a></li>
+            <li><a href="#vi-security">Bảo mật</a></li>
+            <li><a href="#vi-rights">Lựa chọn của bạn</a></li>
+            <li><a href="#vi-changes">Thay đổi</a></li>
+            <li><a href="#vi-contact">Liên hệ</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="vi-device">Thông tin lưu trên thiết bị</h2>
+        <p>Ứng dụng lưu thư viện tài liệu trong vùng lưu trữ riêng của ứng dụng. Thư viện có thể gồm:</p>
+        <ul>
+          <li>Tên tài liệu, ngôn ngữ (tiếng Anh hoặc tiếng Việt) và ngày</li>
+          <li>Ảnh trang bạn chụp, chọn từ thư viện ảnh, hoặc nhập từ PDF</li>
+          <li>Chữ đã nhận dạng, và phần bạn sửa trong ghi chú</li>
+          <li>Bản tóm tắt, ý chính và câu trả lời bạn giữ lại</li>
+          <li>Lần sửa chính tả hoặc bản tóm tắt gần nhất được tạo trên máy hay bằng Gemini</li>
+          <li>PDF mà ứng dụng tạo cho tài liệu đó</li>
+          <li>Tệp AI trên máy, nếu bạn tải về</li>
+          <li>Gói Gemini còn hiệu lực hay không, và số lượt Gemini đã mua còn lại trên thiết bị này</li>
+        </ul>
+        <p>
+          Chúng tôi không nhận bản sao thư viện này. Ứng dụng không tải thư viện lên máy chủ do chúng tôi vận hành.
+          Người khác chỉ thấy thư viện nếu mở khóa được thiết bị của bạn, hoặc nếu bạn tự xuất tệp.
+        </p>
+
+        <h2 id="vi-permissions">Máy ảnh, ảnh và tệp</h2>
+        <ul>
+          <li><strong>Máy ảnh.</strong> Dùng khi bạn quét một trang. Ảnh chỉ được giữ nếu bạn giữ trang đó.</li>
+          <li><strong>Thư viện ảnh.</strong> Chỉ dùng với ảnh bạn chọn để nhập. Ứng dụng không quét thư viện ảnh ở nền.</li>
+          <li><strong>Tệp.</strong> Chỉ dùng với PDF bạn chọn để nhập.</li>
+          <li><strong>Internet.</strong> Dùng để tải AI trên máy và để gửi yêu cầu Gemini do bạn bắt đầu. Apple hoặc Google Play cũng dùng kết nối này khi bạn mua gói đăng ký hoặc gói lượt dùng.</li>
+        </ul>
+        <p>Ứng dụng không xin vị trí, danh bạ, micro hoặc mã quảng cáo.</p>
+
+        <h2 id="vi-local">Xử lý trên thiết bị</h2>
+        <p>Các chức năng sau chạy trên điện thoại. Chúng không gửi trang hoặc ghi chú cho chúng tôi hay cho Gemini:</p>
+        <ul>
+          <li>Nhận dạng chữ Latin</li>
+          <li>Gợi ý chính tả bằng từ điển tiếng Anh và tiếng Việt có sẵn</li>
+          <li>Tóm tắt, sửa chính tả, câu hỏi, ý chính và gợi ý tên bằng AI trên máy</li>
+          <li>Tạo PDF, xoay trang và sửa ghi chú</li>
+        </ul>
+        <p>
+          AI trên máy là mô hình Qwen2.5 1.5B Instruct, định dạng GGUF. Lần đầu bạn cần dùng, ứng dụng tải tệp đó
+          từ Hugging Face. Bạn có thể dừng lúc đang tải. Dừng sẽ xóa tệp tải dở. Sau khi tải xong, mô hình chạy
+          trên thiết bị. Tài liệu của bạn không nằm trong lượt tải. Hugging Face nhận một kết nối tải tệp thông
+          thường, gồm địa chỉ IP của thiết bị.
+        </p>
+
+        <h2 id="vi-leaves">Khi thông tin rời thiết bị</h2>
+        <div class="callout">
+          <p>
+            Chức năng Gemini là tùy chọn. Gồm: đọc ảnh trang, sửa chính tả, viết tóm tắt, trả lời câu hỏi và
+            tách ý chính, khi bạn chọn Gemini. Các việc cùng loại có thể làm trên máy mà không gửi tài liệu đi.
+          </p>
+        </div>
+        <p>
+          Khi bạn bắt đầu một chức năng Gemini, ứng dụng gửi yêu cầu từ thiết bị tới Gemini API của Google
+          (<code>generativelanguage.googleapis.com</code>). Yêu cầu chỉ gồm phần việc đó cần:
+        </p>
+        <ul>
+          <li><strong>Đọc ảnh trang:</strong> tối đa ba ảnh JPEG, cùng ngôn ngữ tài liệu</li>
+          <li><strong>Chính tả, tóm tắt và ý chính:</strong> nội dung ghi chú, cùng ngôn ngữ tài liệu</li>
+          <li><strong>Câu hỏi:</strong> nội dung ghi chú, câu hỏi của bạn, và ngôn ngữ tài liệu</li>
+        </ul>
+        <p>
+          Yêu cầu không có tài khoản người dùng, vì ứng dụng không có tài khoản. Yêu cầu không gồm danh bạ,
+          cả thư viện ảnh, hay những trang không thuộc thao tác đó.
+        </p>
+        <p>
+          Google xử lý yêu cầu theo
+          <a href="https://ai.google.dev/gemini-api/terms">Điều khoản Gemini API</a>
+          và
+          <a href="https://policies.google.com/privacy">Chính sách quyền riêng tư của Google</a>.
+          Chúng tôi không vận hành dịch vụ Gemini và không quyết định Google giữ yêu cầu trong bao lâu.
+          Đừng dùng Gemini với tài liệu mà bạn không được phép chia sẻ với Google.
+        </p>
+        <p>
+          Apple và Google cũng xử lý thông tin cửa hàng và thiết bị theo chính sách của họ khi bạn tải ứng dụng,
+          mua gói đăng ký hoặc gói lượt dùng, hoặc dùng hệ điều hành của họ. Chúng tôi không nhận đủ số thẻ thanh toán của bạn.
+        </p>
+
+        <h2 id="vi-purchases">Mua hàng</h2>
+        <p>
+          Chức năng Gemini cần một gói đăng ký đang hiệu lực hoặc một lượt đã mua. Chức năng trên máy thì không.
+          Giá, chu kỳ thanh toán và số lượt được hiện trong ứng dụng trước khi bạn trả tiền. Apple bán các sản phẩm
+          này trên iOS. Google Play bán trên Android.
+        </p>
+        <p>
+          Ứng dụng lưu trên thiết bị thông tin cần để biết Gemini có đang mở hay không. Lịch sử mua ở với Apple
+          hoặc Google. Cách gia hạn, hủy và số lượt chưa dùng được nêu trong
+          <a data-link="terms" href="../terms-and-conditions/index.html">Điều khoản và điều kiện</a>.
+        </p>
+
+        <h2 id="vi-not">Những gì chúng tôi không thu thập</h2>
+        <ul>
+          <li>Chúng tôi không yêu cầu bạn tạo tài khoản.</li>
+          <li>Chúng tôi không bán hoặc cho thuê tài liệu hay việc bạn dùng ứng dụng.</li>
+          <li>Ứng dụng không gắn SDK quảng cáo hoặc SDK thống kê của chúng tôi.</li>
+          <li>Chúng tôi không dùng nội dung tài liệu để huấn luyện một mô hình do chúng tôi vận hành.</li>
+        </ul>
+
+        <h2 id="vi-retention">Thời gian lưu</h2>
+        <p>
+          Tài liệu, ghi chú, bản tóm tắt và các lượt đã mua chỉ nằm trong ứng dụng sẽ còn đến khi bạn xóa chúng,
+          xóa AI trên máy, hoặc gỡ ứng dụng. Gỡ ứng dụng sẽ xóa thư viện trên máy và các lượt chưa dùng chỉ được lưu trên thiết bị đó.
+        </p>
+        <p>
+          Chúng tôi không giữ bản sao trên máy chủ, nên không khôi phục được tài liệu bạn đã xóa. Yêu cầu Gemini
+          chỉ được lưu theo điều khoản của Google, không nằm trong thư viện do chúng tôi lưu trữ. Biên lai mua hàng
+          do Apple hoặc Google giữ theo quy tắc của họ.
+        </p>
+
+        <h2 id="vi-children">Trẻ em</h2>
+        <p>
+          Document Assistant không hướng tới trẻ em dưới 13 tuổi, và chúng tôi không cố ý thu thập thông tin cá nhân
+          của trẻ em. Đừng dùng chức năng Gemini với tài liệu cá nhân của trẻ em.
+        </p>
+
+        <h2 id="vi-security">Bảo mật</h2>
+        <p>
+          Thư viện nằm trong vùng riêng của ứng dụng và được khóa thiết bị cùng hệ điều hành bảo vệ. Yêu cầu Gemini
+          được gửi qua HTTPS. Không có cách lưu hoặc truyền nào an toàn tuyệt đối. Bạn chịu trách nhiệm về người
+          có thể mở khóa thiết bị và về tài liệu bạn gửi cho Gemini.
+        </p>
+
+        <h2 id="vi-rights">Lựa chọn của bạn</h2>
+        <ul>
+          <li>Dùng chức năng trên máy thay cho Gemini.</li>
+          <li>Xóa một tài liệu, xóa AI trên máy, hoặc xóa ứng dụng.</li>
+          <li>Hủy gói đăng ký trong cài đặt Apple ID hoặc mục đăng ký của Google Play. Cửa hàng vẫn tính phí đến khi bạn hủy ở đó.</li>
+          <li>Yêu cầu Apple hoặc Google hoàn tiền theo quy tắc hoàn tiền của cửa hàng đó.</li>
+          <li>Gửi email cho chúng tôi về chính sách này. Vì chúng tôi không giữ thư viện của bạn, chúng tôi không lấy lại thư viện đó cho bạn.</li>
+        </ul>
+        <p>
+          Tùy nơi bạn sống, bạn có thể có quyền truy cập, sửa, xóa hoặc hạn chế thông tin cá nhân, và quyền khiếu nại
+          với cơ quan bảo vệ dữ liệu. Các quyền đó áp dụng với thông tin chúng tôi thực sự nắm giữ. Với yêu cầu Gemini,
+          Google là bên nhận độc lập. Với khoản mua, Apple hoặc Google là bên nhận dữ liệu thanh toán.
+        </p>
+
+        <h2 id="vi-changes">Thay đổi</h2>
+        <p>
+          Nếu chính sách này đổi, chúng tôi cập nhật ngày trên trang. Nếu một thay đổi ảnh hưởng đáng kể đến cách
+          Gemini dùng tài liệu, chúng tôi cũng hiện thông báo trong ứng dụng trước khi thay đổi đó có hiệu lực.
+          Nếu luật yêu cầu một hình thức đồng ý riêng, chúng tôi sẽ hỏi.
+        </p>
+
+        <h2 id="vi-contact">Liên hệ</h2>
+        <p>
+          <span data-fill="publisher">[Publisher legal name]</span><br />
+          <a data-fill="email" href="#">[Contact email]</a>
+        </p>
+        <p>
+          Mã ứng dụng: <code>com.doc.assistant</code>. Chính sách này áp dụng cho ứng dụng iOS và Android.
+          Điều khoản sử dụng, gồm gói đăng ký và mua theo lượt, nằm trong
+          <a data-link="terms" href="../terms-and-conditions/index.html">Điều khoản và điều kiện</a>.
+        </p>
+      </article>
+    </main>
+
+    <footer class="wrap">
+      <p>
+        <span data-fill="publisher">[Publisher legal name]</span>
+        · <a data-fill="email" href="#">[Contact email]</a>
+      </p>
+    </footer>
+    <script src="site.js"></script>
+    <script src="page.js"></script>
+  </body>
+</html>
